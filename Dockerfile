@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:23.10
 RUN apt-get update && apt-get install -y python3 python3-pip
 RUN pip install flask 
 COPY app.py /opt/
